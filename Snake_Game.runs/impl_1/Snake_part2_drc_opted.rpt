@@ -1,0 +1,42 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Sun Dec  4 11:33:56 2022
+| Host         : LAPTOP-6SUECPCS running 64-bit major release  (build 9200)
+| Command      : report_drc -file Snake_part2_drc_opted.rpt -pb Snake_part2_drc_opted.pb -rpx Snake_part2_drc_opted.rpx
+| Design       : Snake_part2
+| Device       : xc7a35tcpg236-3
+| Speed File   : -3
+| Design State : Synthesized
+------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 1
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 1          |
++-------------+----------+-------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT vga_sync_int/update_reg[2]_i_2 is driving clock pin of 3 cells. This could lead to large hold time violations. Involved cells are:
+update_reg_reg[0], update_reg_reg[1], update_reg_reg[2]
+Related violations: <none>
+
+
